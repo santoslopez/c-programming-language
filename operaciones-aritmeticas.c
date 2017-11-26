@@ -30,12 +30,12 @@ int main(int argc, char const *argv[]) {
   }else{
     //recordar en argv[0] es ./operacionesAritmeticas
 
-    /*asumir que lo que ingresen en argv[1] y argv[2] son numeros enteros*/
+    
 
-    int primerNumero = atoi(argv[1]);//obtenemos el primer numero
+    int primerNumero = atoi(argv[1]);//obtenemos el primer numero, atoi es para convertir la cadena a entero
     int segundoNumero = atoi(argv[2]);//obtenemos el segundo numero
 
-    //un filtro para saber si los numeros son enteros positivos, excluimos el numero 0 como error o cadena de texto
+    /*asumir que lo que ingresen en argv[1] y argv[2] son numeros, si fueran letras se toma esto como un numero 0*/
     if ((primerNumero>=1 || primerNumero<=0) && (segundoNumero>=1 || segundoNumero<=0) ) {
 
       float resultadoSuma = (float) primerNumero + segundoNumero;
